@@ -23,7 +23,7 @@ public abstract class Animales {
 		return nombre;
 	}
 	
-	public abstract boolean esRentable();
+	
 
 	@Override
 	public String toString() {
