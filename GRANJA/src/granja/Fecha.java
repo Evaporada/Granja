@@ -4,11 +4,11 @@ public class Fecha {
 	protected int dia;
 	protected int mes;
 	protected int año;
-	
+
 	public Fecha() {
-		dia = (int) ((Math.random() *30) +1);
-		mes = (int) ((Math.random() *12) +1);
-		año = (int) ((Math.random() *100) +1950);
+		dia = (int) ((Math.random() * 30) + 1);
+		mes = (int) ((Math.random() * 12) + 1);
+		año = (int) ((Math.random() * 31) + 1990);
 	}
 
 	public Fecha(int dia, int mes, int año) {
@@ -45,7 +45,8 @@ public class Fecha {
 	public String toString() {
 		return "Fecha [dia=" + dia + ", mes=" + mes + ", año=" + año + "]";
 	}
+
 	public String convertidorFormato() {
-		return String.format("%02d/%02d/%02d", dia,mes,año);
+		return String.format("%02d/%02d/%02d", dia, mes, año);
 	}
 }
